@@ -1,5 +1,5 @@
 {
-  "name": "my-task-tracker",
+  "name": "task-tracker-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
