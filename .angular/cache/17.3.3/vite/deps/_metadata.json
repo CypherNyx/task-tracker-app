@@ -1,73 +1,64 @@
 {
-  "hash": "bd9d4b84",
-  "configHash": "52a4438d",
+  "hash": "595ce01d",
+  "configHash": "62791f0f",
   "lockfileHash": "f92a9d8c",
-  "browserHash": "b15034de",
+  "browserHash": "800d5ab1",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "e6314268",
-      "needsInterop": false
-    },
-    "@angular/core": {
-      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
-      "file": "@angular_core.js",
-      "fileHash": "90ffbb5a",
-      "needsInterop": false
-    },
-    "@angular/platform-browser": {
-      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
-      "file": "@angular_platform-browser.js",
-      "fileHash": "ff30d0ac",
-      "needsInterop": false
-    },
-    "@angular/router": {
-      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
-      "file": "@angular_router.js",
-      "fileHash": "fd9de58e",
-      "needsInterop": false
-    },
-    "@fortawesome/angular-fontawesome": {
-      "src": "../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
-      "file": "@fortawesome_angular-fontawesome.js",
-      "fileHash": "abadcd6f",
-      "needsInterop": false
-    },
-    "@fortawesome/free-solid-svg-icons": {
-      "src": "../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
-      "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "92f23ff3",
-      "needsInterop": false
-    },
-    "rxjs": {
-      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
-      "file": "rxjs.js",
-      "fileHash": "9e6ce563",
+      "fileHash": "de80e1c5",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "c485fb8c",
+      "fileHash": "681879a2",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "5904c278",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "2af7488f",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "6b92df38",
+      "needsInterop": false
+    },
+    "@fortawesome/angular-fontawesome": {
+      "src": "../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
+      "file": "@fortawesome_angular-fontawesome.js",
+      "fileHash": "21c4bd10",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "fdc2930f",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-T4CCOI7X": {
-      "file": "chunk-T4CCOI7X.js"
+    "chunk-2XRANKB4": {
+      "file": "chunk-2XRANKB4.js"
     },
-    "chunk-WBLUDWRS": {
-      "file": "chunk-WBLUDWRS.js"
+    "chunk-3572AQVT": {
+      "file": "chunk-3572AQVT.js"
     },
-    "chunk-XIIDFHXR": {
-      "file": "chunk-XIIDFHXR.js"
+    "chunk-LZUWE7FY": {
+      "file": "chunk-LZUWE7FY.js"
     },
-    "chunk-KBDOKLKO": {
-      "file": "chunk-KBDOKLKO.js"
-    },
-    "chunk-WSA2QMXP": {
-      "file": "chunk-WSA2QMXP.js"
+    "chunk-OTAV3MUH": {
+      "file": "chunk-OTAV3MUH.js"
     },
     "chunk-J4B6MK7R": {
       "file": "chunk-J4B6MK7R.js"

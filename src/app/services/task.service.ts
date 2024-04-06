@@ -7,6 +7,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs'; 
 import { Task } from '../Task';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  }),
+};
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,5 +24,13 @@ export class TaskService {
 
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl)
+  }
+
+  // This method is used to delete a specific task from the server.
+  deleteTask (task: Task): Observable<Task>{
+    // Construct the URL for the API endpoint by appending the task's id to the base API URL.
+    const url= `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
+    //The delete method of Angular's HttpClient is used to send the request. The <Task> generic indicates that the response from the API will be of type Task.
   }
 }
