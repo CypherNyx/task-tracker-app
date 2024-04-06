@@ -3,6 +3,7 @@ import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
 
 
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -21,6 +22,23 @@ export class TasksComponent {
     
     // Ideally this should be done with an observable instead.
     this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
+  }
+
+  deleteTask(task: Task){
+    // Call the deleteTask method from the taskService. This sends a DELETE request to the server.
+    this.taskService
+      .deleteTask(task)
+      .subscribe(
+        () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
+        // After the server responds, filter out the deleted task from the tasks array.
+        // The 'subscribe' method is used to subscribe to the Observable returned by deleteTask.
+        // The arrow function inside 'subscribe' is executed when the Observable emits the response from the server.
+        );
+  }
+
+  toggleReminder(task: Task){
+    task.reminder = !task.reminder;
+    this.taskService.updateTaskReminder(task).subscribe();
   }
 
 }
