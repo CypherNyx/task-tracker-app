@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AddTaskComponent {
 
+  // When working with forms, always add a property for each field into the component class 
+  text!: string;
+  day!: string;
+  reminder: boolean = false;
+
+
 }
