@@ -33,4 +33,9 @@ export class TaskService {
     return this.http.delete<Task>(url);
     //The delete method of Angular's HttpClient is used to send the request. The <Task> generic indicates that the response from the API will be of type Task.
   }
+
+  updateTaskReminder(task: Task | undefined): Observable<Task> {
+    const url= `${this.apiUrl}/${task?.id}`;
+    return this.http.put<Task>(url, task, httpOptions)
+  }
 }
