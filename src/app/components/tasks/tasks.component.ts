@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
-import { TASKS } from '../../mock-tasks';
+
 
 @Component({
   selector: 'app-tasks',
@@ -8,6 +9,16 @@ import { TASKS } from '../../mock-tasks';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
-  tasks: Task[] = TASKS;
+  tasks: Task[] = [];
+
+  // In order to use a service you need to inject it into the constructor of the component 
+   constructor (private taskService: TaskService) { }
+
+  // This void here only means this function doesn't return anything.
+  ngOnInit(): void {
+    this.tasks = this.taskService.getTasks();
+    // Set the property tasks that right now is just an empty array and set it to whatever this gives us back.
+    // Ideally this should be done with an observable instead.
+  }
 
 }
