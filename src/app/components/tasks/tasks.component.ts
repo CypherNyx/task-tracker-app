@@ -16,9 +16,11 @@ export class TasksComponent {
 
   // This void here only means this function doesn't return anything.
   ngOnInit(): void {
-    this.tasks = this.taskService.getTasks();
+    //this.tasks = this.taskService.getTasks();
     // Set the property tasks that right now is just an empty array and set it to whatever this gives us back.
     // Ideally this should be done with an observable instead.
+
+    this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
   }
 
 }
