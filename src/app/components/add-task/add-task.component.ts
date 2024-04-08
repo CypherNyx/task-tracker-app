@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Task } from '../../Task';
 
 @Component({
   selector: 'app-add-task',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './add-task.component.css'
 })
 export class AddTaskComponent {
+  @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
   // When working with forms, always add a property for each field into the component class 
   text!: string;
@@ -13,4 +15,23 @@ export class AddTaskComponent {
   reminder: boolean = false;
 
 
+  onSubmit() {
+    if (!this.text) {
+      alert('Please add a task!');
+      return;
+    }
+
+
+    const newTask = {
+      text: this.text,
+      day: this.day,
+      reminder: this.reminder
+    }
+
+    this.onAddTask.emit(newTask);
+
+    this.text = '';
+    this.day = '';
+    this.reminder = false;
+  }
 }
