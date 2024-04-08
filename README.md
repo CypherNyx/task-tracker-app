@@ -69,7 +69,7 @@ This will start the mock backend on port 5000.
 
 * Frontend:
   * Angular (version 17.3.0)
-  * Font Awesome (for icons, if you're using it)
+  * Font Awesome (for icons)
 * Backend:
   * JSON-server
 * Other:
