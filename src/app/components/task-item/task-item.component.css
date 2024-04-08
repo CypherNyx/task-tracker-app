@@ -1,12 +1,12 @@
 .task {
-  background: #f1ebff;
+  background: #fff5d6;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
 .task.reminder{
-  border-left: 5px solid #86469c;
+  border-left: 6px solid #700000;
 }
 
 .task h3 {

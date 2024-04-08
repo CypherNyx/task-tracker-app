@@ -10,7 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #9E90FA;
-  background-image: url(./assets/stacked-waves-haikei.svg);
+  background-image: url(./assets/stacked-waves-maroon.svg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,19 +19,22 @@ body {
 }
 
 .container {
-  background-color: rgb(226 213 245);
+  background-color: #f2ece9;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid rgb(114, 70, 180);
+  border: 2px solid #850000  ;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
+a{
+  color: #500000;
+}
 .btn {
   display: inline-block;
-  background: #513eb8;
+  background: #500000;
   color: #fff;
   border: none;
   padding: 10px 20px;
