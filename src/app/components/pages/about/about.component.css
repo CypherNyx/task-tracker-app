@@ -1,0 +1,7 @@
+div.about {
+  margin: 2rem 0;
+}
+
+div.about>p {
+  margin-top: 1rem;
+}
