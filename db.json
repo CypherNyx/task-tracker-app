@@ -10,12 +10,18 @@
       "id": "2",
       "text": "Meeting at Jason's School",
       "day": "May 6th at 1:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": "3",
       "text": "Jason's Karate Class",
       "day": "May 8th at 6:30pm",
+      "reminder": true
+    },
+    {
+      "id": "d434",
+      "text": "testing new task",
+      "day": "May 15th",
       "reminder": false
     }
   ]
